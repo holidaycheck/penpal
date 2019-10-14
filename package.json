@@ -33,14 +33,20 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm-run-all format lint test && git add ."
+      "pre-commit-disabled": "npm-run-all format lint test && git add ."
     }
   },
   "browserslist": [
-    "last 2 Chrome version",
-    "last 2 Firefox version",
-    "last 2 Safari version",
-    "last 2 Edge version"
+    "Chrome >= 49",
+    "ChromeAndroid >= 28",
+    "Firefox >= 52",
+    "last 1 FirefoxAndroid version",
+    "Explorer >= 11",
+    "Edge >= 16",
+    "Safari >= 11",
+    "Opera >= 57",
+    "iOS >= 9",
+    "Android >= 4"
   ],
   "files": [
     "dist",

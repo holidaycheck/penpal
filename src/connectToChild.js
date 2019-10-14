@@ -155,7 +155,7 @@ export default ({ iframe, methods = {}, childOrigin, timeout, debug }) => {
     // to the iframe in their closures, the iframe would stick around
     // too.
     var checkIframeInDocIntervalId = setInterval(() => {
-      if (!document.contains(iframe)) {
+      if (!document.body.contains(iframe)) {
         clearInterval(checkIframeInDocIntervalId);
         destroy();
       }

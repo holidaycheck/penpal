@@ -65,7 +65,7 @@ export default ({ parentOrigin = '*', methods = {}, timeout, debug } = {}) => {
       // and if it fails we can assume the iframe has been removed
       // and we ignore the message event.
       try {
-        clearTimeout();
+        clearTimeout('');
       } catch (e) {
         return;
       }
